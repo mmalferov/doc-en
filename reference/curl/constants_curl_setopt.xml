@@ -694,7 +694,7 @@
    </term>
    <listitem>
     <para>
-     Tell curl which method to use to reach a file on a FTP(S) server. Possible values are
+     Tell cURL which method to use to reach a file on a (S)FTP server. Possible values are
      <constant>CURLFTPMETHOD_DEFAULT</constant>,
      <constant>CURLFTPMETHOD_MULTICWD</constant>,
      <constant>CURLFTPMETHOD_NOCWD</constant>, and
@@ -747,7 +747,7 @@
    </term>
    <listitem>
     <para>
-     Head start for ipv6 for the happy eyeballs algorithm. Happy eyeballs attempts
+     Head start for IPv6 for the Happy Eyeballs algorithm. Happy Eyeballs attempts
      to connect to both IPv4 and IPv6 addresses for dual-stack hosts,
      preferring IPv6 first for timeout milliseconds.
      Defaults to CURL_HET_DEFAULT, which is currently 200 milliseconds.
@@ -1448,7 +1448,7 @@
    <listitem>
     <para>
      Set a <type>string</type> holding the host name or dotted numerical
-     IP address to be used as the preproxy that curl connects to before
+     IP address to be used as the preproxy that cURL connects to before
      it connects to the HTTP(S) proxy specified in the
      <constant>CURLOPT_PROXY</constant> option for the upcoming request.
      The preproxy can only be a SOCKS proxy and it should be prefixed with
@@ -1808,7 +1808,7 @@
      The file name of your private key used for connecting to the HTTPS proxy.
      The default format is "PEM" and can be changed with
      <constant>CURLOPT_PROXY_SSLKEYTYPE</constant>.
-     (iOS and Mac OS X only) This option is ignored if curl was built against Secure Transport. Available if built TLS enabled.
+     (iOS and Mac OS X only) This option is ignored if cURL was built against Secure Transport. Available if built TLS enabled.
      Available as of PHP 7.3.0 and cURL 7.52.0
     </para>
    </listitem>
@@ -1913,9 +1913,9 @@
      Set to <literal>2</literal> to verify in the HTTPS proxy's certificate name fields against the proxy name.
      When set to <literal>0</literal> the connection succeeds regardless of the names used in the certificate.
      Use that ability with caution!
-     <literal>1</literal> treated as a debug option in curl 7.28.0 and earlier.
-     From curl 7.28.1 to 7.65.3 <constant>CURLE_BAD_FUNCTION_ARGUMENT</constant> is returned.
-     From curl 7.66.0 onwards <literal>1</literal> and <literal>2</literal> is treated as the same value.
+     <literal>1</literal> treated as a debug option in cURL 7.28.0 and earlier.
+     From cURL 7.28.1 to 7.65.3 <constant>CURLE_BAD_FUNCTION_ARGUMENT</constant> is returned.
+     From cURL 7.66.0 onwards <literal>1</literal> and <literal>2</literal> is treated as the same value.
      In production environments the value of this option should be kept at <literal>2</literal> (default value).
      Available as of PHP 7.3.0 and cURL 7.52.0
     </para>
@@ -1948,7 +1948,7 @@
      The list of cipher suites to use for the TLS 1.3 connection to a proxy.
      The list must be syntactically correct, it consists of one or more
      cipher suite strings separated by colons. This option is currently used
-     only when curl is built to use OpenSSL 1.1.1 or later.
+     only when cURL is built to use OpenSSL 1.1.1 or later.
      If you are using a different SSL backend you can try setting
      TLS 1.3 cipher suites by using the <constant>CURLOPT_PROXY_SSL_CIPHER_LIST</constant> option. Available when built with OpenSSL &gt;= 1.1.1.
      Available as of PHP 7.3.0 and cURL 7.61.0
