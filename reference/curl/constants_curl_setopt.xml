@@ -801,6 +801,7 @@
    </term>
    <listitem>
     <para>
+     Send HTTP headers to both proxy and host or separately.
      Possible values are <constant>CURLHEADER_UNIFIED</constant> or <constant>CURLHEADER_SEPARATE</constant>.
      Defaults to <constant>CURLHEADER_SEPARATE</constant> as of cURL
      7.42.1, and <constant>CURLHEADER_UNIFIED</constant> before.
